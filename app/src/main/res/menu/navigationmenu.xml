@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/firstMenu"
+        android:icon="@drawable/ic_wallet"
+        android:title="Payable" />
+
+    <item
+        android:id="@+id/firstMenu2"
+        android:icon="@drawable/ic_wallet"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/firstMenu3"
+        android:icon="@drawable/ic_wallet"
+        android:title="My Earning" />
+
+
+    <item
+        android:id="@+id/firstMenu4"
+        android:icon="@drawable/ic_wallet"
+        android:title="MY Location" />
+
+    <item
+        android:id="@+id/firstMenu5"
+        android:icon="@drawable/ic_wallet"
+        android:title="Rate Us" />
+
+    <item
+        android:id="@+id/firstMenu6"
+        android:icon="@drawable/ic_wallet"
+        android:title="Share App" />
+
+    <item
+        android:id="@+id/firstMenu7"
+        android:icon="@drawable/ic_wallet"
+        android:title="Privacy Policy" />
+
+    <item
+        android:id="@+id/firstMenu8"
+        android:icon="@drawable/ic_wallet"
+        android:title="Support" />
+
+
+</menu>
+
