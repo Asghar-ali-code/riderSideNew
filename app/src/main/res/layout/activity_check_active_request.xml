@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ActivityRequest">
-
-
-
+    tools:context=".ActivityCheckActiveRequest">
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
@@ -29,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lato"
-        android:text="checK for New Request"
+        android:text="checK for Active Request"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="16sp"
@@ -134,8 +131,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView6"
         app:layout_constraintTop_toTopOf="@+id/textView6" />
 
-
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -149,38 +144,19 @@
         app:layout_constraintTop_toTopOf="@+id/textView7"
         app:layout_constraintVertical_bias="0.0" />
 
+
+
+
     <TextView
-        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/edit_text"
-        android:text="Accept"
-        android:layout_marginTop="32dp"
-        android:layout_marginRight="12dp"
-        android:paddingTop="8dp"
-        android:paddingBottom="8dp"
-        android:paddingEnd="14dp"
-        android:paddingStart="14dp"
-        android:textColor="@color/green"
+        android:fontFamily="@font/lato"
+        android:text="In Progress..."
+        android:layout_marginEnd="12dp"
+        android:textColor="@color/red"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2" />
 
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edit_text"
-        android:fontFamily="@font/lato"
-        android:text="Reject"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingEnd="16dp"
-        android:paddingStart="16dp"
-        android:textColor="@color/red"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-

@@ -2,14 +2,14 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
 
     <stroke
-        android:color="#ECEFF1"
+        android:color="@color/dark_blue"
 
 
         />
     <solid
-        android:color="#BEECEFF1"
+        android:color="@color/light_blue"
         />
-    <corner
+    <corners
         android:radius="10dp"
         />
 

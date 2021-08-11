@@ -5,16 +5,27 @@
       <map>
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable-v24/gradinetbtn.xml" value="0.1" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/btn_bg.xml" value="0.1" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/earningbg.xml" value="0.19583333333333333" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/edit_text.xml" value="0.1" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/edit_text_bg_new.xml" value="0.19583333333333333" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/ic_drawer.xml" value="0.19583333333333333" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/ic_location2.xml" value="0.19282051282051282" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/ic_privacy.xml" value="0.1" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/ic_user.xml" value="0.19583333333333333" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/ic_wallet.xml" value="0.19583333333333333" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/naviation_drawer.xml" value="0.1" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/splashbtnbg.xml" value="0.1" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/drawable/test.xml" value="0.19583333333333333" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_check_active_request.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_live_trackig.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.1796875" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_privacy_policy.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_put_otp.xml" value="0.1796875" />
-        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_request.xml" value="0.1" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_request.xml" value="0.22" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_rider_address.xml" value="0.1796875" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_rider_earning.xml" value="0.22" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_setting.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_signup.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />

@@ -86,11 +86,123 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:focusableInTouchMode="true"
-        app:headerLayout="@layout/header_menu"
+
         android:theme="@style/NavigationDrawer"
         app:itemIconTint="@color/dark_blue"
-        app:itemTextColor="@color/dark_blue"
-        app:menu="@menu/navigationmenu" />
+        app:itemTextColor="@color/dark_blue">
+<!--        app:menu="@menu/navigationmenu" >-->
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="12dp"
+               android:background="@color/light_blue"
+               />
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/light_blue"
+               android:src="@drawable/logonav" />
+           <TextView
+               android:id="@+id/payable"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:layout_marginTop="12dp"
+               android:textSize="16sp"
+               android:clickable="true"
+               android:layout_marginStart="12dp"
+               android:text="Payable"
+               android:drawableLeft="@drawable/ic_wallet"
+               android:drawablePadding="6dp"
+               android:padding="8dp"/>
+           <TextView
+               android:id="@+id/profle"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Profile"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_user"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:drawablePadding="4dp"
+               android:padding="8dp"/>
+           <TextView
+               android:id="@+id/MyEarning"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="MY Earning"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_money"
+               android:drawablePadding="4dp"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:padding="8dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="My Location"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_location"
+               android:drawablePadding="4dp"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:padding="8dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Rate Us"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_vector"
+               android:drawablePadding="4dp"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:padding="8dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Share App"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_share"
+               android:drawablePadding="4dp"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:padding="8dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Privacy Policy"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_privacy"
+               android:drawablePadding="4dp"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:padding="8dp"/>
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Support"
+               android:fontFamily="@font/lato"
+               android:textColor="@color/light_blue"
+               android:drawableLeft="@drawable/ic_customer"
+               android:drawablePadding="4dp"
+               android:textSize="16sp"
+               android:layout_marginStart="12dp"
+               android:padding="8dp"/>
+
+       </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

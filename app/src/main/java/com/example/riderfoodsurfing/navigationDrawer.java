@@ -1,13 +1,16 @@
 package com.example.riderfoodsurfing;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -20,6 +23,7 @@ public class navigationDrawer extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
+    TextView textView;
 
 
     NavigationMenu navigationMenu;
@@ -34,65 +38,84 @@ public class navigationDrawer extends AppCompatActivity {
         navigationView1 = findViewById(R.id.navmenu);
         drawerLayout = findViewById(R.id.drawer);
 
+        textView= findViewById(R.id.payable);
+
+
         toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.open, R.string.close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView1.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+
+
+//        getSupportActionBar().setHomeButtonEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//
+//       //etSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_arrowback);
+        toolbar.post(new Runnable() {
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                navigationView1.setCheckedItem(item.getItemId());
-                switch (item.getItemId()) {
-                    case R.id.firstMenu:
-                        Toast.makeText(navigationDrawer.this, "Payable is clicked", Toast.LENGTH_SHORT).show();
-                        //  item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-
-                    case R.id.firstMenu2:
-                        Toast.makeText(navigationDrawer.this, "Profile is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-
-                    case R.id.firstMenu3:
-                        Toast.makeText(navigationDrawer.this, "My Earning is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-
-                    case R.id.firstMenu4:
-                        Toast.makeText(navigationDrawer.this, "My location is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-
-                    case R.id.firstMenu5:
-                        Toast.makeText(navigationDrawer.this, "Rate us is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.firstMenu6:
-                        Toast.makeText(navigationDrawer.this, "share App is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                    case R.id.firstMenu7:
-                        Toast.makeText(navigationDrawer.this, "Privacy policy is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-
-                    case R.id.firstMenu8:
-                        Toast.makeText(navigationDrawer.this, "Support is clicked", Toast.LENGTH_SHORT).show();
-//                        item.setChecked(true);
-                        drawerLayout.closeDrawer(GravityCompat.START);
-                        break;
-                }
-                return true;
+            public void run() {
+                Drawable d = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_drawer, null);
+                toolbar.setNavigationIcon(d);
             }
-
         });
+
+
+
+//        navigationView1.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+//            @Override
+//            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+//
+//                navigationView1.setCheckedItem(item.getItemId());
+//                switch (item.getItemId()) {
+//                    case R.id.firstMenu:
+//                        Toast.makeText(navigationDrawer.this, "Payable is clicked", Toast.LENGTH_SHORT).show();
+//                        //  item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.firstMenu2:
+//                        Toast.makeText(navigationDrawer.this, "Profile is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.firstMenu3:
+//                        Toast.makeText(navigationDrawer.this, "My Earning is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.firstMenu4:
+//                        Toast.makeText(navigationDrawer.this, "My location is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.firstMenu5:
+//                        Toast.makeText(navigationDrawer.this, "Rate us is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//                    case R.id.firstMenu6:
+//                        Toast.makeText(navigationDrawer.this, "share App is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//                    case R.id.firstMenu7:
+//                        Toast.makeText(navigationDrawer.this, "Privacy policy is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//
+//                    case R.id.firstMenu8:
+//                        Toast.makeText(navigationDrawer.this, "Support is clicked", Toast.LENGTH_SHORT).show();
+////                        item.setChecked(true);
+//                        drawerLayout.closeDrawer(GravityCompat.START);
+//                        break;
+//                }
+//                return true;
+//            }
+
+//        });
     }
 }
