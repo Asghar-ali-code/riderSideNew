@@ -32,12 +32,12 @@
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/settinsBack"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/recView"
+        app:layout_constraintStart_toStartOf="@+id/recView"
         app:layout_constraintTop_toTopOf="@+id/settinsBack" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/recView"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:layout_marginStart="20dp"
@@ -61,7 +61,7 @@
         android:drawableStart="@drawable/ic_location2"
         android:layout_marginTop="16dp"
         android:text="Address of the rider come here"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintEnd_toEndOf="@+id/recView"
+        app:layout_constraintTop_toTopOf="@+id/recView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

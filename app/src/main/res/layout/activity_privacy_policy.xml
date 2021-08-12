@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="@+id/settinsBack" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/recView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="20dp"
@@ -62,9 +62,9 @@
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et euismod sit eget scelerisque. Pulvinar donec nulla purus ornare elit tempus lectus quis velit. Nisl commodo gravida viverra at neque posuere. Aliquam ac massa gravida sed mattis purus ultricies vel risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et euismod sit eget scelerisque. Pulvinar donec nulla purus ornare elit tempus lectus quis velit. Nisl commodo gravida viverra at neque posuere. Aliquam ac massa gravida sed mattis purus ultricies vel risus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et euismod sit eget scelerisque. Pulvinar donec nulla purus ornare elit tempus lectus quis velit. Nisl commodo gravida viverra at neque posuere. Aliquam ac massa gravida sed mattis purus ultricies vel risus."
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintEnd_toEndOf="@+id/recView"
+        app:layout_constraintStart_toStartOf="@+id/recView"
+        app:layout_constraintTop_toTopOf="@+id/recView" />
 
 
 
