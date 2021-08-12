@@ -52,16 +52,33 @@
     </View>
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:drawableStart="@drawable/ic_location2"
         android:paddingStart="42dp"
         android:paddingEnd="32dp"
+        android:text="Address of the rider come here"
         android:textColor="@color/black"
         android:textSize="16sp"
-        android:drawableStart="@drawable/ic_location2"
-        android:layout_marginTop="16dp"
-        android:text="Address of the rider come here"
         app:layout_constraintEnd_toEndOf="@+id/recView"
         app:layout_constraintTop_toTopOf="@+id/recView" />
+
+    <Button
+        android:id="@+id/trackYourOrderBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradinetbtn"
+        android:fontFamily="@font/lato_bold"
+        android:paddingStart="102dp"
+        android:paddingEnd="102dp"
+        android:layout_marginTop="24dp"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/recView"
+        app:layout_constraintStart_toStartOf="@+id/recView"
+        app:layout_constraintTop_toBottomOf="@+id/recView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,59 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="160dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintPro"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/constraintRec">
+        android:layout_height="match_parent">
 
         <View
-            android:id="@+id/recView"
+            android:id="@+id/recViewPro"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_marginStart="12dp"
-            android:layout_marginEnd="12dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginEnd="20dp"
             android:background="@drawable/request_bg"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.5"
+
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
 
         </View>
 
         <TextView
-            android:id="@+id/bookingId"
+            android:id="@+id/bookingIdPro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="48dp"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/lato"
+            android:text="Booking ID:"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:text="Booking ID:"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/recView" />
+            app:layout_constraintTop_toTopOf="@+id/recViewPro" />
 
 
         <TextView
-            android:id="@+id/bookingIdNumber"
+            android:id="@+id/bookingIdNumberPro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/lato"
             android:layout_marginStart="4dp"
+            android:fontFamily="@font/lato"
             android:text="123DPCVR"
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/bookingId"
-            app:layout_constraintStart_toEndOf="@+id/bookingId"
-            app:layout_constraintTop_toTopOf="@+id/bookingId" />
+            app:layout_constraintBottom_toBottomOf="@+id/bookingIdPro"
+            app:layout_constraintStart_toEndOf="@+id/bookingIdPro"
+            app:layout_constraintTop_toTopOf="@+id/bookingIdPro" />
 
 
         <TextView
 
-            android:id="@+id/addressTxt"
+            android:id="@+id/addressTxtPro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
@@ -62,8 +69,8 @@
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/bookingId"
-            app:layout_constraintTop_toBottomOf="@+id/bookingId" />
+            app:layout_constraintStart_toStartOf="@+id/bookingIdPro"
+            app:layout_constraintTop_toBottomOf="@+id/bookingIdPro" />
 
         <TextView
             android:id="@+id/addres"
@@ -72,11 +79,11 @@
             android:layout_marginTop="4dp"
             android:text="address comes here"
             android:textColor="@color/black"
-            app:layout_constraintStart_toStartOf="@+id/addressTxt"
-            app:layout_constraintTop_toBottomOf="@+id/addressTxt" />
+            app:layout_constraintStart_toStartOf="@+id/addressTxtPro"
+            app:layout_constraintTop_toBottomOf="@+id/addressTxtPro" />
 
         <TextView
-            android:id="@+id/charge"
+            android:id="@+id/chargePro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -98,13 +105,11 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/charge"
-            app:layout_constraintStart_toEndOf="@+id/charge"
-            app:layout_constraintTop_toTopOf="@+id/charge" />
-
+            app:layout_constraintBottom_toBottomOf="@+id/chargePro"
+            app:layout_constraintStart_toEndOf="@+id/chargePro"
+            app:layout_constraintTop_toTopOf="@+id/chargePro" />
 
         <TextView
-            android:id="@+id/payment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato"
@@ -117,39 +122,20 @@
             app:layout_constraintTop_toTopOf="@+id/dollarSign"
             app:layout_constraintVertical_bias="0.0" />
 
-        <TextView
-            android:id="@+id/btnAccept"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/edit_text"
-            android:text="Accept"
-            android:layout_marginTop="32dp"
-            android:layout_marginRight="12dp"
-            android:paddingTop="8dp"
-            android:paddingBottom="8dp"
-            android:paddingEnd="14dp"
-            android:paddingStart="14dp"
-            android:textColor="@color/green"
-            app:layout_constraintEnd_toEndOf="@+id/recView"
-            app:layout_constraintTop_toTopOf="@+id/recView" />
-
 
         <TextView
-            android:id="@+id/btnReject"
+            android:id="@+id/texProgress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/edit_text"
+            android:layout_marginEnd="12dp"
             android:fontFamily="@font/lato"
-            android:paddingStart="16dp"
-            android:paddingTop="10dp"
-            android:paddingEnd="16dp"
-            android:paddingBottom="10dp"
-            android:text="Reject"
+            android:text="In Progress..."
             android:textColor="@color/red"
-            app:layout_constraintEnd_toEndOf="@+id/btnAccept"
-            app:layout_constraintStart_toStartOf="@+id/btnAccept"
-            app:layout_constraintTop_toBottomOf="@+id/btnAccept" />
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/recViewPro"
+            app:layout_constraintEnd_toEndOf="@+id/recViewPro"
+            app:layout_constraintTop_toTopOf="@+id/recViewPro" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
         <activity
+            android:name=".AcitivityCompletedOrders"
+            android:exported="true" />
+        <activity
+            android:name=".ActivityActiveOrders"
+            android:exported="true" />
+        <activity
             android:name=".ActivityRiderEarning"
             android:exported="true" />
         <activity

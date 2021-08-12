@@ -39,11 +39,10 @@
         app:layout_constraintTop_toTopOf="@+id/settinsBack" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="40dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclview"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
