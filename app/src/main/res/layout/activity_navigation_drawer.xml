@@ -35,8 +35,10 @@
 
         <Button
             android:id="@+id/btnCheckNewRequest"
-            android:layout_width="290dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="75dp"
+            android:paddingEnd="75dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/btn_bg"
             android:fontFamily="@font/lato_bold"
@@ -50,8 +52,10 @@
 
         <Button
             android:id="@+id/btnCheckActiveRequest"
-            android:layout_width="290dp"
-            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="75dp"
+            android:paddingEnd="75dp"
             android:layout_marginTop="24dp"
             android:background="@drawable/btn_bg"
             android:fontFamily="@font/lato_bold"
@@ -64,12 +68,14 @@
             app:layout_constraintTop_toBottomOf="@+id/btnCheckNewRequest" />
 
         <Button
-            android:id="@+id/btnUpdaeSetting"
-            android:layout_width="290dp"
-            android:layout_height="50dp"
+            android:id="@+id/btnCompletedOrders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="94dp"
+            android:paddingEnd="94dp"
             android:background="@drawable/btn_bg"
             android:fontFamily="@font/lato_bold"
-            android:text="Check for Active Request"
+            android:text="Completed Orders"
             android:layout_marginTop="24dp"
             android:textAllCaps="false"
             android:textColor="@color/white"

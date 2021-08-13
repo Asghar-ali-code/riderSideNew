@@ -1,8 +1,11 @@
 package com.example.riderfoodsurfing;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,6 +27,7 @@ public class navigationDrawer extends AppCompatActivity {
     DrawerLayout drawerLayout;
     Toolbar toolbar;
     TextView textView;
+    Button btnCheckNewRequest,btnCheckActiveRequest,btnCompletedOrders;
 
 
     NavigationMenu navigationMenu;
@@ -56,6 +60,33 @@ public class navigationDrawer extends AppCompatActivity {
             public void run() {
                 Drawable d = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_drawer, null);
                 toolbar.setNavigationIcon(d);
+            }
+        });
+
+        btnCheckNewRequest =findViewById(R.id.btnCheckNewRequest);
+        btnCheckActiveRequest= findViewById(R.id.btnCheckActiveRequest);
+        btnCompletedOrders= findViewById(R.id.btnCompletedOrders);
+
+        btnCheckNewRequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(navigationDrawer.this,ActivityRequest.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCheckActiveRequest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(navigationDrawer.this,ActivityActiveOrders.class);
+                startActivity(intent);
+            }
+        });
+        btnCompletedOrders.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(navigationDrawer.this,AcitivityCompletedOrders.class);
+                startActivity(intent);
             }
         });
 

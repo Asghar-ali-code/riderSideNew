@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class ActivityVerfiyEmail extends AppCompatActivity {
- Button btnSendCode;
+public class ActivityResetPassword extends AppCompatActivity {
+
+    Button submitNewPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_verfiy_email);
-
-        btnSendCode= findViewById(R.id.btnSendCode);
-        btnSendCode.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_reset_password);
+        submitNewPassword = findViewById(R.id.submitNewPassword);
+        submitNewPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(ActivityVerfiyEmail.this,ActivityPutOtp.class);
+                Intent intent= new Intent(ActivityResetPassword.this,ActivityLogin.class);
                 startActivity(intent);
             }
         });

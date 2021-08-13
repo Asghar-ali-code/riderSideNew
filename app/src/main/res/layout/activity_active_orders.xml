@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/settinsBack"
+        android:id="@+id/requestProgressBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -33,10 +33,10 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/settinsBack"
+        app:layout_constraintBottom_toBottomOf="@+id/requestProgressBack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/settinsBack"
-        app:layout_constraintTop_toTopOf="@+id/settinsBack" />
+        app:layout_constraintStart_toStartOf="@+id/requestProgressBack"
+        app:layout_constraintTop_toTopOf="@+id/requestProgressBack" />
 
     <View
         android:id="@+id/recViewPro"

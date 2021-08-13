@@ -18,7 +18,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/settinsBack"
+        android:id="@+id/newRequestBack"
         android:layout_margin="16dp"
         android:background="@drawable/ic_backarrowblack"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,16 +33,15 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/settinsBack"
+        app:layout_constraintBottom_toBottomOf="@+id/newRequestBack"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/settinsBack"
-        app:layout_constraintTop_toTopOf="@+id/settinsBack" />
+        app:layout_constraintStart_toStartOf="@+id/newRequestBack"
+        app:layout_constraintTop_toTopOf="@+id/newRequestBack" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/recyclview"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
