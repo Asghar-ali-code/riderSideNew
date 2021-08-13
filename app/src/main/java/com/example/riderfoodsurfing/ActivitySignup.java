@@ -24,6 +24,7 @@ public class ActivitySignup extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivitySignup.this, navigationDrawer.class);
                 startActivity(intent);
+                finish();
             }
         });
         loginTxt= findViewById(R.id.loginTxt);
@@ -32,6 +33,7 @@ public class ActivitySignup extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivitySignup.this, ActivityLogin.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

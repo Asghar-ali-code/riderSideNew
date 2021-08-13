@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class ActivityRiderAddress extends AppCompatActivity {
 
@@ -22,15 +23,14 @@ public class ActivityRiderAddress extends AppCompatActivity {
         riderAddressBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(ActivityRiderAddress.this,navigationDrawer.class);
-                startActivity(intent);
+               finish();
             }
         });
         submitAddress.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(ActivityRiderAddress.this,navigationDrawer.class);
-                startActivity(intent);
+                Toast.makeText(ActivityRiderAddress.this, "Address is saved", Toast.LENGTH_SHORT).show();
+//
             }
         });
     }

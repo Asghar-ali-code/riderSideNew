@@ -21,6 +21,7 @@ public class ActivityPutOtp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityPutOtp.this,ActivityResetPassword.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

@@ -20,6 +20,7 @@ public class ActivityVerfiyEmail extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityVerfiyEmail.this,ActivityPutOtp.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

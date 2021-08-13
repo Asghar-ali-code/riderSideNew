@@ -193,6 +193,7 @@
                android:textColor="@color/light_blue"
                android:textSize="16sp" />
            <TextView
+               android:id="@+id/privacyPolicy"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="Privacy Policy"

@@ -21,6 +21,7 @@ public class AcitivityCompletedOrders extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(AcitivityCompletedOrders.this,navigationDrawer.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

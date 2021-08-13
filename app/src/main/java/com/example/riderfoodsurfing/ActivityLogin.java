@@ -26,6 +26,7 @@ public class ActivityLogin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityLogin.this, navigationDrawer.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -34,6 +35,7 @@ public class ActivityLogin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityLogin.this, ActivitySignup.class);
                 startActivity(intent);
+                finish();
             }
         });
         forgetPassword.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +43,7 @@ public class ActivityLogin extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityLogin.this,ActivityVerfiyEmail.class);
                 startActivity(intent);
+                finish();
             }
         });
     }

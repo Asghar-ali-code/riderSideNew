@@ -20,7 +20,9 @@ public class ActivitySplashScreen2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivitySplashScreen2.this,ActivityLogin.class);
                 startActivity(intent);
+                finish();
             }
+
         });
     }
 }

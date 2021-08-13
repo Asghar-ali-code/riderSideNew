@@ -30,6 +30,7 @@ public class ActivityRequest extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityRequest.this,navigationDrawer.class);
                 startActivity(intent);
+                finish();
             }
         });
 

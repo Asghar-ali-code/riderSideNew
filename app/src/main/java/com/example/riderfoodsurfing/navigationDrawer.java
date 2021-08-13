@@ -26,7 +26,7 @@ public class navigationDrawer extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
-    TextView textView,MyEarning,myLocation;
+    TextView textView,MyEarning,myLocation,privacyPolicy;
     Button btnCheckNewRequest,btnCheckActiveRequest,btnCompletedOrders;
 
 
@@ -68,12 +68,14 @@ public class navigationDrawer extends AppCompatActivity {
         btnCompletedOrders= findViewById(R.id.btnCompletedOrders);
         MyEarning= findViewById(R.id.MyEarning);
         myLocation= findViewById(R.id.myLocation);
+        privacyPolicy= findViewById(R.id.privacyPolicy);
 
         btnCheckNewRequest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,ActivityRequest.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -82,6 +84,7 @@ public class navigationDrawer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,ActivityActiveOrders.class);
                 startActivity(intent);
+                finish();
             }
         });
         btnCompletedOrders.setOnClickListener(new View.OnClickListener() {
@@ -89,6 +92,7 @@ public class navigationDrawer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,AcitivityCompletedOrders.class);
                 startActivity(intent);
+                finish();
             }
         });
         MyEarning.setOnClickListener(new View.OnClickListener() {
@@ -105,7 +109,13 @@ public class navigationDrawer extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        privacyPolicy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(navigationDrawer.this,ActivityPrivacyPolicy.class);
+                startActivity(intent);
+            }
+        });
 
 
 //        navigationView1.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {

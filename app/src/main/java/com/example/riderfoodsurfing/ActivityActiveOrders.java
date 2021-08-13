@@ -20,6 +20,7 @@ public class ActivityActiveOrders extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(ActivityActiveOrders.this,navigationDrawer.class);
                 startActivity(intent);
+                finish();
             }
         });
 
