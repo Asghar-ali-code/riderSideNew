@@ -16,7 +16,7 @@
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/settinsBack"
+        android:id="@+id/riderAddressBack"
         android:layout_margin="16dp"
         android:background="@drawable/ic_backarrowblack"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,10 +31,10 @@
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/settinsBack"
+        app:layout_constraintBottom_toBottomOf="@+id/riderAddressBack"
         app:layout_constraintEnd_toEndOf="@+id/recView"
         app:layout_constraintStart_toStartOf="@+id/recView"
-        app:layout_constraintTop_toTopOf="@+id/settinsBack" />
+        app:layout_constraintTop_toTopOf="@+id/riderAddressBack" />
 
     <View
         android:id="@+id/recView"
@@ -58,6 +58,7 @@
         android:layout_marginTop="16dp"
         android:drawableStart="@drawable/ic_location2"
         android:paddingStart="42dp"
+        android:gravity="center_vertical"
         android:paddingEnd="32dp"
         android:text="Address of the rider come here"
         android:textColor="@color/black"
@@ -66,7 +67,7 @@
         app:layout_constraintTop_toTopOf="@+id/recView" />
 
     <Button
-        android:id="@+id/trackYourOrderBtn"
+        android:id="@+id/submitAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/gradinetbtn"

@@ -117,12 +117,14 @@
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                android:fontFamily="@font/lato"
-               android:textColor="@color/light_blue"
+               android:textColor="@color/white"
                android:layout_marginTop="12dp"
+               android:background="@color/light_blue"
                android:textSize="16sp"
                android:clickable="true"
-               android:layout_marginStart="12dp"
+              android:paddingStart="12dp"
                android:text="Payable"
+              android:gravity="center_vertical"
                android:drawableLeft="@drawable/ic_wallet"
                android:drawablePadding="6dp"
                android:padding="8dp"/>
@@ -135,7 +137,8 @@
                android:textColor="@color/light_blue"
                android:drawableLeft="@drawable/ic_user"
                android:textSize="16sp"
-               android:layout_marginStart="12dp"
+               android:paddingStart="12dp"
+               android:gravity="center"
                android:drawablePadding="4dp"
                android:padding="8dp"/>
            <TextView
@@ -148,9 +151,11 @@
                android:drawableLeft="@drawable/ic_money"
                android:drawablePadding="4dp"
                android:textSize="16sp"
-               android:layout_marginStart="12dp"
+               android:gravity="center"
+               android:paddingStart="12dp"
                android:padding="8dp"/>
            <TextView
+               android:id="@+id/myLocation"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
                android:text="My Location"
@@ -159,7 +164,8 @@
                android:drawableLeft="@drawable/ic_location"
                android:drawablePadding="4dp"
                android:textSize="16sp"
-               android:layout_marginStart="12dp"
+               android:gravity="center"
+               android:paddingStart="12dp"
                android:padding="8dp"/>
            <TextView
                android:layout_width="wrap_content"
@@ -170,19 +176,22 @@
                android:drawableLeft="@drawable/ic_vector"
                android:drawablePadding="4dp"
                android:textSize="16sp"
-               android:layout_marginStart="12dp"
+               android:gravity="center"
+               android:paddingStart="12dp"
                android:padding="8dp"/>
+
            <TextView
                android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:text="Share App"
-               android:fontFamily="@font/lato"
-               android:textColor="@color/light_blue"
+               android:layout_height="49dp"
                android:drawableLeft="@drawable/ic_share"
                android:drawablePadding="4dp"
-               android:textSize="16sp"
-               android:layout_marginStart="12dp"
-               android:padding="8dp"/>
+               android:fontFamily="@font/lato"
+               android:padding="8dp"
+               android:paddingStart="12dp"
+               android:text="Share App"
+               android:gravity="center"
+               android:textColor="@color/light_blue"
+               android:textSize="16sp" />
            <TextView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
@@ -192,7 +201,8 @@
                android:drawableLeft="@drawable/ic_privacy"
                android:drawablePadding="4dp"
                android:textSize="16sp"
-               android:layout_marginStart="12dp"
+             android:gravity="center"
+               android:paddingStart="12dp"
                android:padding="8dp"/>
            <TextView
                android:layout_width="wrap_content"
@@ -203,7 +213,8 @@
                android:drawableLeft="@drawable/ic_customer"
                android:drawablePadding="4dp"
                android:textSize="16sp"
-               android:layout_marginStart="12dp"
+               android:gravity="center"
+               android:paddingStart="12dp"
                android:padding="8dp"/>
 
        </LinearLayout>

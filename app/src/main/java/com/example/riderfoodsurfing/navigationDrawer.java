@@ -26,7 +26,7 @@ public class navigationDrawer extends AppCompatActivity {
     ActionBarDrawerToggle toggle;
     DrawerLayout drawerLayout;
     Toolbar toolbar;
-    TextView textView;
+    TextView textView,MyEarning,myLocation;
     Button btnCheckNewRequest,btnCheckActiveRequest,btnCompletedOrders;
 
 
@@ -62,10 +62,12 @@ public class navigationDrawer extends AppCompatActivity {
                 toolbar.setNavigationIcon(d);
             }
         });
-
+               // Onclick listener
         btnCheckNewRequest =findViewById(R.id.btnCheckNewRequest);
         btnCheckActiveRequest= findViewById(R.id.btnCheckActiveRequest);
         btnCompletedOrders= findViewById(R.id.btnCompletedOrders);
+        MyEarning= findViewById(R.id.MyEarning);
+        myLocation= findViewById(R.id.myLocation);
 
         btnCheckNewRequest.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,6 +88,20 @@ public class navigationDrawer extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,AcitivityCompletedOrders.class);
+                startActivity(intent);
+            }
+        });
+        MyEarning.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(navigationDrawer.this,ActivityRiderEarning.class);
+                startActivity(intent);
+            }
+        });
+        myLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent= new Intent(navigationDrawer.this,ActivityRiderAddress.class);
                 startActivity(intent);
             }
         });
