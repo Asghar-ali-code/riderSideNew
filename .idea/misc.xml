@@ -27,7 +27,7 @@
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_acitivity_completed_orders.xml" value="0.22" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_active_orders.xml" value="0.16666666666666666" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_check_active_request.xml" value="0.1796875" />
-        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_live_trackig.xml" value="0.1796875" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_live_trackig.xml" value="0.25" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_navigation_drawer.xml" value="0.1796875" />
@@ -42,11 +42,13 @@
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_splash_screen2.xml" value="0.1" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/activity_verfiy_email.xml" value="0.1796875" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/completed_order_recyclview.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/header_menu.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/progress_request_recview.xml" value="0.1796875" />
-        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/request_layout_for_recview.xml" value="0.1" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/request_layout_for_recview.xml" value="0.3333333333333333" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/layout/retype_password.xml" value="0.1796875" />
         <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/menu/navigationmenu.xml" value="0.1796875" />
+        <entry key="..\:/Funtash internship/rider sider food surfin new/foodsurvingRider-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19282051282051282" />
       </map>
     </option>
   </component>

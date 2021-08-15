@@ -100,6 +100,7 @@ public class navigationDrawer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,ActivityRiderEarning.class);
                 startActivity(intent);
+                finish();
             }
         });
         myLocation.setOnClickListener(new View.OnClickListener() {
@@ -107,6 +108,7 @@ public class navigationDrawer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,ActivityRiderAddress.class);
                 startActivity(intent);
+                finish();
             }
         });
         privacyPolicy.setOnClickListener(new View.OnClickListener() {
@@ -114,6 +116,7 @@ public class navigationDrawer extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent= new Intent(navigationDrawer.this,ActivityPrivacyPolicy.class);
                 startActivity(intent);
+                finish();
             }
         });
 
