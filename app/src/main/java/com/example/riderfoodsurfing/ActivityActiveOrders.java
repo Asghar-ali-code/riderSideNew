@@ -19,8 +19,8 @@ public class ActivityActiveOrders extends AppCompatActivity {
         //Recycl View
         recyclviewPro=findViewById(R.id.recyclviewPro);
         recyclviewPro.setLayoutManager(new LinearLayoutManager(this));
-        String activeOrders[]={"23","122","56","90","23","122","56","90"};
-        recyclviewPro.setAdapter(new ActiveOrdersAdapter(activeOrders));
+        String activeOrdersarr[]={"23","122","56","90","23","122","56","90"};
+        recyclviewPro.setAdapter(new ActiveOrdersAdapter(activeOrdersarr));
 
 
         // Clickk listner
